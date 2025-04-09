@@ -131,10 +131,27 @@
   <img src="imagens/Thor.Filhote08.jpg" alt="Filhote Thor 8" style="width: 100%; max-width: 500px; border-radius: 12px;">
   </div>
     <body>
-      <video width="100%" controls style="max-width: 600px; border-radius: 12px;">
-  <source src="videos/filhotes.mp4" type="video/mp4">
-  Seu navegador não suporta a tag de vídeo.
-</video>
+    <!-- Botão que mostra o vídeo -->
+<div style="text-align: center; margin-top: 20px;">
+  <button onclick="mostrarVideo()" style="padding: 10px 20px; font-size: 16px; border-radius: 8px; cursor: pointer;">
+    Ver vídeo
+  </button>
+</div>
+
+<!-- Div com o vídeo escondido -->
+<div id="videoThor" style="display: none; margin-top: 20px; display: flex; justify-content: center;">
+  <video width="100%" controls style="max-width: 600px; border-radius: 12px;">
+    <source src="videos/filhotes.mp4" type="video/mp4">
+    Seu navegador não suporta a tag de vídeo.
+  </video>
+</div>
+
+<!-- Código JavaScript para mostrar o vídeo -->
+<script>
+  function mostrarVideo() {
+    document.getElementById('videoThor').style.display = 'flex';
+  }
+</script>
     </body>
 </section>
   
