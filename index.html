@@ -52,11 +52,22 @@
       <a href="#galeria">Nossos Cães</a>
       <a href="#contato">Contato</a>
     </nav>
-<a href="#video">
-  <button style="background-color: #e91e63; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer;">
-    Ver Vídeo
-  </button>
-</a>
+<!-- ... outras seções do site ... -->
+
+<!-- Botão para mostrar o vídeo -->
+<button onclick="mostrarVideo()" style="background-color: #e91e63; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer;">
+  Ver Vídeo
+</button>
+
+<!-- Container do vídeo (oculto no começo) -->
+<div id="video-container" style="display: none; margin-top: 20px;">
+  <video width="100%" controls>
+    <source src="videos/filhote.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
+</div>
+
+<!-- ... mais conteúdo, se tiver ... -->
   </header>  <section id="sobre" class="section">
     <h2>Sobre Nós</h2>
     <p>Somos um canil localizado em Catanduva, especializado na criação da raça Pit Monster. Trabalhamos com amor, responsabilidade e excelência na seleção de nossos reprodutores. Enviamos filhotes para todos os estados do Brasil.</p>
@@ -169,4 +180,9 @@
       }
     }
   </script>
+     <script>
+  function mostrarVideo() {
+    document.getElementById('video-container').style.display = 'block';
+  }
+</script> 
 </body> 
