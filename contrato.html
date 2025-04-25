@@ -98,6 +98,46 @@
     </div>
 
     <div id="contrato" class="content" style="display:none;">
+        <form action="URL_DO_SERVIÇO_DE_BACKEND" method="POST">
+    <h3>Dados do Proprietário</h3>
+    <label for="nome">Seu Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="email">Seu Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" name="cpf" required><br><br>
+
+    <label for="rg">RG:</label>
+    <input type="text" id="rg" name="rg" required><br><br>
+
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" name="telefone" required><br><br>
+
+    <h3>Dados do Filhote</h3>
+    <label for="nome_filhote">Nome do Filhote:</label>
+    <input type="text" id="nome_filhote" name="nome_filhote" required><br><br>
+
+    <label for="sexo_filhote">Sexo do Filhote:</label>
+    <select id="sexo_filhote" name="sexo_filhote" required>
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+    </select><br><br>
+
+    <label for="cor_filhote">Cor do Filhote:</label>
+    <input type="text" id="cor_filhote" name="cor_filhote" required><br><br>
+
+    <h3>Formas de Pagamento</h3>
+    <label for="forma_pagamento">Forma de Pagamento:</label>
+    <select id="forma_pagamento" name="forma_pagamento" required>
+        <option value="Pix">Pix</option>
+        <option value="Transferência">Transferência Bancária</option>
+        <option value="Cartão">Cartão de Crédito</option>
+    </select><br><br>
+
+    <button type="submit">Enviar Contrato</button>
+</form>
         <h2>Contrato</h2>
         <p>DADOS DO PROPRIETÁRIO: SEU NOME (obrigatório), SEU EMAIL (obrigatório), CPF (obrigatório), RG (obrigatório), Foto do RG, CPF ou CNH (obrigatório), Foto do Comprovante de Residência atual (Agua ou Luz) - (obrigatório), Data de Nascimento (obrigatório), TELEFONE CELULAR: (ddd) 00000-0000 (obrigatório), TELEFONE RESIDENCIAL: (ddd) 00000-0000, ENDEREÇO: (obrigatório), BAIRRO: (obrigatório), CEP: (obrigatório), COMPLEMENTO, CIDADE: (obrigatório), ESTADO: (obrigatório).</p>
         <p>DADOS DO FILHOTE: QUANTIDADE DE FILHOTE(s): (obrigatório), NOME DO FILHOTE: (obrigatório), RAÇA DO FILHOTE: (obrigatório), SEXO DO FILHOTE: (obrigatório), COR DO FILHOTE: (obrigatório), FORMAS DE ENTREGA DO FILHOTE (obrigatório), FORMAS DE PAGAMENTO: (obrigatório).</p>
