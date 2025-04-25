@@ -141,7 +141,7 @@
 <button type="button" onclick="document.getElementById('form-contrato').style.display='none'">Fechar</button>
     <button type="submit">Enviar Contrato</button>
     </div>
-    <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -237,22 +237,7 @@
             doc.text(Cor do Filhote: ${document.getElementById("cor_filhote").value}, 20, 100);
 
             // Forma de Pagamento
-            doc.text(Forma de Pagamento: ${document.getElementById("forma_pagamento").value}, 20, 110);
-
-            // Incluir o texto do contrato
-            doc.setFontSize(10);
-            doc.text('Contrato: O proprietário acima, com as informações fornecidas, adquire o filhote conforme os dados acima, comprometendo-se ao pagamento na forma selecionada.', 20, 120);
-            doc.text('Ambas as partes concordam com os termos deste contrato, incluindo as condições de entrega e saúde do animal.', 20, 130);
-            doc.text('Este contrato tem validade a partir da assinatura do comprador e vendedor, com compromisso de ambas as partes em cumprir as condições acordadas.', 20, 140);
-
-            // Assinaturas
-            doc.text('Assinatura do Proprietário: _________', 20, 160);
-            doc.text('Assinatura do Vendedor: _________', 20, 170);
-
-            // Salvar o PDF
-            doc.save('contrato.pdf');
-        };
-    </script>
+            doc.text(`Forma de Pagamento: ${document.getElementById("forma_pagament
 
 </body>
 </html>
