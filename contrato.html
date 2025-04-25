@@ -141,35 +141,7 @@
 <button type="button" onclick="document.getElementById('form-contrato').style.display='none'">Fechar</button>
     <button type="submit">Enviar Contrato</button>
     </div>
-    <form id="form-contrato">
-  <!-- Campos do formulário aqui -->
-  <input type="text" id="nome" placeholder="Seu Nome" required><br>
-  <input type="email" id="email" placeholder="Seu Email" required><br>
-  <!-- ... mais campos ... -->
-
-  <button type="button" onclick="gerarPDF()">Gerar PDF</button>
-  <button type="button" onclick="document.getElementById('form-contrato').style.display='none'">Fechar</button>
-</form>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script>
-  async function gerarPDF() {
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF();
-
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    // Pegue os outros campos aqui...
-
-    doc.setFontSize(14);
-    doc.text("Contrato de Reserva de Filhote", 20, 20);
-    doc.text(Nome: ${nome}, 20, 30);
-    doc.text(Email: ${email}, 20, 40);
-    // Adicione os outros campos aqui...
-
-    doc.save("contrato.pdf");
-  }
-</script>
+    
 </form>
 </body>
 </html>
