@@ -1,33 +1,103 @@
-<header>
-        <img src="logo.png" alt="Logo EGMS BETTAS KENNEL">
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGMS BETTAS KENNEL</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            background-image: url('path-to-your-logo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .button {
+            background-color: #FF5733;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #C13C21;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .content h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .content p {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
         <h1>EGMS BETTAS KENNEL</h1>
-        <nav>
-            <ul>
-                <li><a href="#reserva">Reserva de Filhote</a></li>
-                <li><a href="#entrega">Entrega de Filhote</a></li>
-                <li><a href="#contrato">Contrato</a></li>
-            </ul>
-        </nav>
     </header>
-<section id="contrato" class="section">
-  <h2>Contrato</h2>
-  <details>
-    <summary>↓ Reserva de filhote (Click para ler) ↓</summary>
-    <p>A reserva de filhote é realizada e confirmada após a confirmação de pagamento no valor de 30% do valor do filhote. No momento da reserva é informado ao contratante sua ordem na fila de escolha, que é feita de acordo com a ordem do pagamento da reserva. Ressaltamos que sempre a primeira escolha caberá ao Canil EGMS BETTAS KENNEL decidir se colocará a disposição para venda...</p>
-    <p>O pagamento da reserva do filhote serve como um sinal (garantia) de negócio que integra no valor final do filhote, o que consta automaticamente em nosso Contrato de Compra e Venda. O restante do valor deverá ser pago até a entrega do cão conforme combinado e acordado.</p>
-    <p>A reserva/pagamento/arras/sinal de negócio garante ao contratante (cliente) que o Canil EGMS BETTAS KENNEL cuidará do seu filhote até o dia da sua disponibilidade para entrega sempre lhe atendendo e mantendo-o informado do crescimento e desenvolvimento do filhote através de fotos e vídeos, sobre os cuidados de saúde, dicas de criação, alimentação, exercícios etc. O cliente tem o direito de escolher um nome e sobrenome para seu filhote, o que constará em seu documento de registro (pedigree) após seu cadastro...</p>
-    <p>De outro lado, serve a reserva de indenização ao Canil EGMS BETTAS KENNEL em caso de desistência do negócio por parte do novo tutor. Pois certamente as garantias dadas pelo Canil e acima mencionadas serão sempre cumpridas. Orientamos aos nossos contratantes que somente deposite o valor da reserva se tiver plena certeza de que ficará com o filhote.</p>
-    <p>Antes de confirmar a sua reserva, saiba que: A RESERVA/ARRAS PENITENCIAL NÃO SERÁ DEVOLVIDA EM CASO DE ARREPENDIMENTO POR PARTE DO COMPRADOR em hipótese alguma (lei de arras, artigo 420 lei 10.406). Ela serve de indenização ao Canil EGMS BETTAS KENNEL, sendo referente aos custos e o pagamento pelo serviço de seleção e cuidado dos cães, pagamento pelo acompanhamento personalizado ao até então comprador, retirada do filhote da disponibilidade de venda, além de servir para cobrir custos de nova divulgação para venda do filhote e despesas que a partir do momento da reserva do filhote o canil não contava em custear e que pode se tornar permanente caso o filhote não seja vendido.</p>
-    <p>Ao adquirir um filhote do nosso canil esteja certo de que receberá assessoria para que a sua relação com o filhote seja a mais harmônica possível. Criamos por amor à raça e consideramos os filhotes aqui nascidos únicos, extraordinários e especiais.</p>
-  </details>
+    <div class="buttons">
+        <button class="button" onclick="document.getElementById('reserva').style.display = 'block'">↓ Reserva de Filhote (Click para ler) ↓</button>
+        <button class="button" onclick="document.getElementById('entrega').style.display = 'block'">↓ Entrega de Filhote (Click para ler) ↓</button>
+        <button class="button" onclick="document.getElementById('contrato').style.display = 'block'">↓ Contrato (Click para ler) ↓</button>
+    </div>
 
-  <details>
-    <summary>↓ Entrega do filhote (Click para ler) ↓</summary>
-    <p>Os filhotes do Canil EGMS BETTAS KENNEL serão entregues com as doses de vacinas polivalentes (Vacina v10 Importada) e tratamento profilático contra verminose, incluindo giárdia, feito com os melhores medicamentos disponíveis no mercado e compatíveis com a idade do filhote;</p>
-    <p>Amostra da ração utilizada no Canil; pedigree (IBC, ABBR, ABKC ou CBKC); atestado médico de saúde, carteira de vacinação em dia.</p>
-    <p>Nosso objetivo é conhecer os motivos da aquisição de um filhote e ajudar na escolha do exemplar da raça, pois o mais importante é que o animal tenha o mesmo perfil da família, garantindo assim o bem estar do filhote e a satisfação da família que o adquiriu.</p>
-  </details>
-</section>
+    <div id="reserva" class="content" style="display:none;">
+        <h2>Reserva de Filhote</h2>
+        <p>A reserva de filhote é realizada e confirmada após a confirmação de pagamento no valor de 30% do valor do filhote...</p>
+        <p>O pagamento da reserva do filhote serve como um sinal (garantia) de negócio que integra no valor final do filhote...</p>
+        <p>Antes de confirmar a sua reserva, saiba que: A RESERVA/ARRAS PENITENCIAL NÃO SERÁ DEVOLVIDA EM CASO DE ARREPENDIMENTO POR PARTE DO COMPRADOR...</p>
+        <button class="button" onclick="document.getElementById('reserva').style.display = 'none'">Fechar</button>
+    </div>
+
+    <div id="entrega" class="content" style="display:none;">
+        <h2>Entrega de Filhote</h2>
+        <p>Os filhotes do Canil PitBully serão entregues com as doses de vacinas polivalentes (Vacina v10 Importada) e tratamento profilático...</p>
+        <button class="button" onclick="document.getElementById('entrega').style.display = 'none'">Fechar</button>
+    </div>
+
+    <div id="contrato" class="content" style="display:none;">
+        <h2>Contrato</h2>
+        <p>Dados do Proprietário: Nome, Email, CPF, RG...</p>
+        <p>Dados do Filhote: Quantidade, Nome, Raça, Sexo, Cor...</p>
+        <button class="button" onclick="document.getElementById('contrato').style.display = 'none'">Fechar</button>
+    </div>
+</body>
+</html>
 <footer>
     <p>&copy; 2025 EGMS Bettas Kennel. Todos os direitos reservados.</p>
     <!-- Link de Voltar ao site -->
